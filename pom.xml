@@ -12,9 +12,9 @@
 	<artifactId>hibernate-spring-boot-utc-timezone</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hibernate-spring-boot-utc-timezone</name>
-	<description>Creating PostgreSLoginThis application is a sample of how to store date, time, and timestamps in UTC time zone. The second setting, useLegacyDatetimeCode is needed only for MySQL. Otherwise, set only hibernate.jdbc.time_zone.
+	<description>This application is a sample of how to store date, time, and timestamps in UTC time zone. The second setting, useLegacyDatetimeCode is needed only for MySQL. Otherwise, set only hibernate.jdbc.time_zone.
 
- and Registration Example Project with Spring SecurityQL Schema Before Liquibase Execution</description>
+</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -29,23 +29,33 @@
 		<url/>
 	</scm>
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>       
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.32</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 	</dependencies>
 
 	<build>
